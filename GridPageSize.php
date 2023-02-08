@@ -1,5 +1,5 @@
 <?php
-namespace webvimark\extensions\GridPageSize;
+namespace uzzielpelawak\extensions\GridPageSize;
 
 use yii\base\InvalidConfigException;
 use yii\base\Widget;

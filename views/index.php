@@ -4,7 +4,7 @@
  */
 ?>
 <?php
-use webvimark\extensions\GridPageSize\GridPageSize;
+use uzzielpelawak\extensions\GridPageSize\GridPageSize;
 use yii\helpers\Html;
 use yii\web\View;
 

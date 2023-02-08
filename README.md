@@ -9,13 +9,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist webvimark/grid-page-size "*"
+php composer.phar require --prefer-dist uzzielpelawak/grid-page-size "*"
 ```
 
 or add
 
 ```
-"webvimark/grid-page-size": "*"
+"uzzielpelawak/grid-page-size": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -27,7 +27,7 @@ If input in GridView
 
 ```php
 
-<?=  webvimark\extensions\GridPageSize\GridPageSize::widget([
+<?=  uzzielpelawak\extensions\GridPageSize\GridPageSize::widget([
         'pjaxId'=>'role-grid-pjax',
 ]) ?>
 
@@ -45,9 +45,9 @@ If input in GridView
 		'firstPageLabel'=>'<<',
 	],
 	'filterModel' => $searchModel,
-	'layout'=>'{items}<div class="row"><div class="col-sm-8">{pager}</div><div class="col-sm-4 text-right">{summary}'.webvimark\extensions\GridBulkActions\GridBulkActions::widget([
+	'layout'=>'{items}<div class="row"><div class="col-sm-8">{pager}</div><div class="col-sm-4 text-right">{summary}'.uzzielpelawak\extensions\GridBulkActions\GridBulkActions::widget([
 				'gridId'=>'role-grid',
-				'actions'=>[ yii\helpers\Url::to(['bulk-delete'])=>webvimark\extensions\GridBulkActions\GridBulkActions::t('app', 'Delete'),],
+				'actions'=>[ yii\helpers\Url::to(['bulk-delete'])=>uzzielpelawak\extensions\GridBulkActions\GridBulkActions::t('app', 'Delete'),],
 			]).'</div></div>',
 	'columns' => [
 		['class' => 'yii\grid\SerialColumn', 'options'=>['style'=>'width:10px'] ],
